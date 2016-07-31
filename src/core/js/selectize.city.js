@@ -57,7 +57,7 @@
     }
 
     function init($selectize, index, data) {
-      delete selectize.selected;
+      delete $selectize.selected;
       $selectize.clearOptions();
       $.each(data, function(key, value) {
         $selectize.addOption({
@@ -171,8 +171,6 @@
       $self.selectedLabel = function() {
         if(!this.$selectize) return null;
         return this.$selectize.map(function(x) {
-          if(x.selected == null || x.selected == undefined)
-            return null;
           return x.selected && x.selected.v[options.fieldMap[options.labelField]];
         }).filter(function(x) {
           if(x)

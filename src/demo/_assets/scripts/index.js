@@ -29,12 +29,12 @@ $(function() {
         onChange: function($self) {
           var selectedObject = $self.selectedObject();
           var selectedLabel = $self.selectedLabel();
-          var selectedValue= $self.selectedValue();
+          var selectedValue = $self.selectedValue();
           var $tr = $tbody.find('.selected-info:eq(' + index + ')');
           //console.log($tr);
           $tr.find('td:eq(0)').text(index);
-          $tr.find('td:eq(1)').text((selectedLabel && selectedLabel.length !== 0) ? selectedLabel: '未选择');
-          $tr.find('td:eq(2)').text((selectedValue && selectedLabel.length !== 0) ? selectedValue: '未选择');
+          $tr.find('td:eq(1)').text((selectedLabel && selectedLabel.length !== 0) ? selectedLabel : '未选择');
+          $tr.find('td:eq(2)').text((selectedValue && selectedLabel.length !== 0) ? selectedValue : '未选择');
         }
       });
     } else {
@@ -43,12 +43,12 @@ $(function() {
         onChange: function($self) {
           var selectedObject = $self.selectedObject();
           var selectedLabel = $self.selectedLabel();
-          var selectedValue= $self.selectedValue();
+          var selectedValue = $self.selectedValue();
           var $tr = $tbody.find('.selected-info:eq(' + index + ')');
           //console.log($tr);
           $tr.find('td:eq(0)').text(index);
-          $tr.find('td:eq(1)').text((selectedLabel && selectedLabel.length !== 0) ? selectedLabel: '未选择');
-          $tr.find('td:eq(2)').text((selectedValue && selectedLabel.length !== 0) ? selectedValue: '未选择');
+          $tr.find('td:eq(1)').text((selectedLabel && selectedLabel.length !== 0) ? selectedLabel : '未选择');
+          $tr.find('td:eq(2)').text((selectedValue && selectedLabel.length !== 0) ? selectedValue : '未选择');
         }
       });
     }
