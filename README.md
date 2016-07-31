@@ -1,4 +1,9 @@
-# package selectize.city
+
+#selectize.city基于[selectize.js](https://github.com/selectize/selectize.js)的省市区下拉联动选择插件
+
+依赖[jQuery](http://jquery.com/)
+依赖[selectize.js](https://github.com/selectize/selectize.js)
+依赖[tkJSPinyin](https://github.com/dqmmpb/tkJSPinyin)
 
 
 ```javascript
