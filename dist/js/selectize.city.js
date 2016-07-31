@@ -63,8 +63,8 @@
         $selectize.addOption({
           code: value.v[options.fieldMap.code],
           title: value.v[options.fieldMap.title],
-          py: value.v[options.fieldMap.p],
-          pyf: value.v[options.fieldMap.f],
+          py: value.v[options.fieldMap.py],
+          pyf: value.v[options.fieldMap.pyf],
           id: key
         });
       });
