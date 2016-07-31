@@ -1,0 +1,38 @@
+{
+  "name": "selectize.city",
+  "version": "3.1.0",
+  "main": "dist/js/selectize.city.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "build",
+    ".babelrc",
+    ".editorconfig",
+    ".gitignore",
+    ".gitattributes",
+    "gulp",
+    "**/demo",
+    "gulpfile.babel.js",
+    "package.json"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "modernizr": "~2.8.1",
+    "jquery": "^2.2.0",
+    "selectize": "^0.12.1",
+    "tkJSPinyin": "dqmJSPinyin#^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "chai": "~3.4.2"
+  },
+  "overrides": {
+    "tkJSPinyin": {
+      "main": [
+        "src/pinyin_es6.js"
+      ]
+    }
+  }
+}

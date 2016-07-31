@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Selectize City</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+
+  <!-- build:css assets/css/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/selectize/dist/css/selectize.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css assets/css/demo.css -->
+  <link rel="stylesheet" href="/assets/css/demo.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+
+  <div>.select-group(使用默认数据源，只有浙江省)</div>
+  <div class="select-group" data-selected="330000,330100,330109"></div>
+
+  <div>.select-group2(多个class，使用全省市区)</div>
+  <div>.select-group(第1个class=".select-group")</div>
+  <div class="select-group select-group2" data-selected="330000,330100,330102"></div>
+  <div>.select-group(第2个class=".select-group")</div>
+  <div class="select-group select-group2" data-selected="370000,370400"></div>
+
+  <table for="getSelectInfo">
+    <thead>
+      <tr class="selected-info">
+        <th>序号</th>
+        <th>省市区</th>
+        <th>省市区代码</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+
+
+  <!-- build:js assets/scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/sifter/sifter.js"></script>
+  <script src="/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="/bower_components/selectize/dist/js/selectize.js"></script>
+  <script src="/bower_components/tkJSPinyin/src/pinyin_es6.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/vendor/selectize.city.js -->
+  <script src="/src/core/js/selectize.city.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/common.js -->
+  <script src="_assets/scripts/common.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js assets/scripts/index.js -->
+  <script src="_assets/scripts/index.js"></script>
+  <!-- endbuild -->
+
+</body>
+</html>
