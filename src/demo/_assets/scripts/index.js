@@ -34,7 +34,7 @@ $(function() {
           //console.log($tr);
           $tr.find('td:eq(0)').text(index);
           $tr.find('td:eq(1)').text((selectedLabel && selectedLabel.length !== 0) ? selectedLabel : '未选择');
-          $tr.find('td:eq(2)').text((selectedValue && selectedLabel.length !== 0) ? selectedValue : '未选择');
+          $tr.find('td:eq(2)').text((selectedValue && selectedValue.length !== 0) ? selectedValue : '未选择');
         }
       });
     } else {
