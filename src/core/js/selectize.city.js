@@ -33,6 +33,7 @@
     valueField: 'code',
     searchField: ['py', 'pyf', 'title'],  // py:拼音, pyf:拼音全, title:显示
     labelField: 'title',
+    names: ['province', 'city', 'district'],
     placeholder: ['省', '市', '区'],
     items: [],
     selectOnTab: true,
@@ -108,7 +109,7 @@
           valueField: options.valueField,
           searchField: options.searchField,
           labelField: options.labelField,
-          placeholder: options.placeholder ? options.placeholder[i] : undefined,
+          placeholder: options.placeholder ? options.placeholder[i] : null,
           selectOnTab: options.selectOnTab,
           onChange: onChange
         })[0].selectize;
@@ -125,9 +126,10 @@
         options.data = defaultData;
       }
       // 默认值
-      options = $.extend(true, {}, defaults, options);
+      options = $.extend({}, defaults, options);
 
       var city_json = options.data;
+      var names = options.names;
 
       var city_map = arryToMap([city_json]);
 
@@ -135,12 +137,13 @@
 
       var $self = $(this)[0];
       var $select = $($self).find('select');
-      var $province, $city, $dist;
 
       if($select && $select.length === 0) {
-        $('<select class="prov" name="province"></select>').appendTo($self);
-        $('<select class="city" name="city"></select>').appendTo($self);
-        $('<select class="dist" name="district"></select>').appendTo($self);
+        if(names) {
+          for(var i = 0, len = names.length; i < len; i++) {
+            $('<select name="' + names[i] + '"></select>').appendTo($self);
+          }
+        }
         $select = $($self).find('select');
       } else if($select && $select.length !== 3) {
         throw new Error('You need create 3 select element!');

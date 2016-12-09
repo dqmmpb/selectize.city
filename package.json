@@ -37,6 +37,7 @@
     "main-bower-files": "^2.5.0",
     "opn": "^1.0.1",
     "require-dir": "^0.3.0",
+    "uglify-js": "^2.7.5",
     "wiredep": "^2.2.2"
   },
   "eslintConfig": {

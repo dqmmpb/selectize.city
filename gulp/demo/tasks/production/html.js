@@ -35,7 +35,7 @@ gulp.task('demo:html:production', () => {
   return gulp.src(config.production.src)
     .pipe($.useref({searchPath: config.production.useref.searchPath}))
     .pipe(jsfilter)
-    .pipe($.if('*.js', $.uglify()))
+    // .pipe($.if('*.js',$.uglify()))
     .pipe(jsfilter.restore)
     .pipe(cssfilter)
     .pipe($.if('*.css', urlAdjuster({replace: cssUrlReplace})))
