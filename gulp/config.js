@@ -91,11 +91,11 @@ module.exports = {
   },
   scripts: {
     development: {
-      src:  src + '/js/**/*',
+      src:  src + '/js/**/*.js',
       dest: build + '/js'
     },
     production: {
-      src:  build + '/js/**/*',
+      src:  build + '/js/**/*.js',
       dest: dist + '/js'
     }
   },

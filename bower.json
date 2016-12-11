@@ -31,7 +31,7 @@
   "overrides": {
     "tkJSPinyin": {
       "main": [
-        "src/pinyin_es6.js"
+        "src/pinyin_es5.js"
       ]
     }
   }

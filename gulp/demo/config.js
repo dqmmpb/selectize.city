@@ -114,7 +114,7 @@ module.exports = {
       useref: {
           searchPath: [build, src, '.' ]
       },
-      jsfilter: ['**', '!**/main*.js'],
+      jsfilter: ['**/*.js', '!**/main*.js'],
       cssfilter: ['**/*.css'],
       cssUrlReplace: {
         regExps:[/..\/img\//],
